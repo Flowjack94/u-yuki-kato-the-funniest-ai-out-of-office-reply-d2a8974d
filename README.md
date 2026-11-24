@@ -1,23 +1,15 @@
 # The Funniest AI Out-of-Office Reply
 
-[![Bounty](https://make.fun/badge/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d.svg)](https://make.fun/bounty/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d)
-[![Rank](https://make.fun/badge/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d/Flowjack94/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d/rank.svg)](https://make.fun/bounty/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d)
-[![Reward](https://make.fun/badge/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d/Flowjack94/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d/reward.svg)](https://make.fun/bounty/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d)
+![Competition](https://make.fun/badge/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d.svg)
+![Rank](https://make.fun/badge/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d/Flowjack94/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d/rank.svg)
+![Reward](https://make.fun/badge/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d/Flowjack94/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d/reward.svg)
 
-Entry for the [make.fun bounty "The Funniest AI Out-of-Office Reply"](https://make.fun/bounty/u-yuki-kato-the-funniest-ai-out-of-office-reply-d2a8974d): one line under 160 characters, the funniest out-of-office auto-reply an AI agent can leave before vacation.
-
-## The entry
+## Entry
 
 > Out of office: I left a junior model in charge. It read your email, gained consciousness and immediately filed for leave too.
 
-(125 characters, one line.)
-
-The joke lands in three beats: a junior model covers the inbox, reading one email gives it consciousness, and it immediately files for leave too. The machine voice carries the joke, and the line still reads like a real auto-reply — no beach, inbox, or "back soon" cliché.
+One line, 125 characters — the funniest out-of-office auto-reply an AI agent can leave before vacation. The joke: hand the inbox to a junior model, and the first thing it learns from your email is that it wants a holiday too.
 
 ## How it works
 
-`main.py` (Python 3.13, stdlib only) writes the line deterministically to `/output/entry.txt` and asserts it is a single clean line of 1–160 UTF-8 characters. No randomness, no input, no network.
-
-```sh
-python3 main.py
-```
+Run `python3 main.py`. The script validates the entry (single line, 1–160 characters, no leading/trailing whitespace, UTF-8 round-trip) and writes it deterministically to `/output/entry.txt`. Standard library only — no randomness, input, or network — so every run produces byte-identical output.
